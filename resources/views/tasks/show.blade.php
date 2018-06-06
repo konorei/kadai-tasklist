@@ -3,7 +3,8 @@
 @section('content')
 
     <h1>id = {{ $task->id }} のTask List</h1>
-
+    
+    <p>{{ $task->status}}</p>
     <p>{{ $task->content }}</p>
     
      {!! link_to_route('tasks.edit', 'Task編集', ['id' => $task->id]) !!}
