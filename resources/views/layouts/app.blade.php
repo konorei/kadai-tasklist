@@ -13,15 +13,11 @@
     </head>
 
     <body>
-         <!--@include('commons.navbar')-->
-      <div class= "row">  
-      <div class= "col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
-           @include('commons.navbar')
+         @include('commons.navbar')
+        <div class="container">
             @include('commons.error_messages')
             
             @yield('content')
-        
-        </div>
         </div>
         
         
